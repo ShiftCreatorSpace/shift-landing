@@ -38,7 +38,7 @@
 						<div class="inner">
 							<div class="flex-container">
 								<!-- <h1>Shift Creator Space</h1> -->
-								<img style="width: 275px; height: 145px; margin-bottom: 65px; margin-top: -25px" src="assets/css/images/textlogo.png"></img>
+								<img style="width: 275px; height: 145px; margin-bottom: 75px; margin-top: -25px" src="assets/css/images/textlogo.png"></img>
 							</div>
 							<div>
                                 <!-- <h2>Hack. Design. Build. Create.</h2> -->
@@ -138,8 +138,8 @@
 												<input type="text" name="name" id="name" />
 											</div>
 											<div class="field half">
-												<h3>Email</h3>
-												<input type="text" name="email" id="email" />
+												<h3>Subject</h3>
+												<input type="text" name="subject" id="subject" />
 											</div>
 											<div class="field">
 												<h3>Message</h3>
@@ -147,7 +147,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a id="send-message-button" class="button submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
@@ -166,11 +166,9 @@
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://www.facebook.com/meetShift/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.instagram.com/meetshift/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -184,7 +182,7 @@
                                 <h2 class="pillars">Become a Creator - challenge yourself, build insane projects, meet magical people, and make beautiful memories.</h2>
                                     <!-- <p class="pillars">Challenge yourself, build incredible projects & companies, meet some magical people, and make some beautiful memories.</p> -->
                                 <ul class="actions" style="margin-top: 5px;">
-                                    <li><a href="" class="pillars-button">Apply</a></li>
+                                    <li><a href="https://forms.gle/HyqBKuqYGNLJULe68" class="pillars-button">Apply</a></li>
                                 </ul>
                             </div>
                     </section>
@@ -200,7 +198,25 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script type="text/javascript">
+
+                var sendButton = document.getElementById('send-message-button');
+                sendButton.onclick = sendMessage;
+                
+                function sendMessage() {
+                    // window.open('mailto:shift.creatorspace@gmail.com');
+                    var message = document.getElementById('message').value
+                    var subject = document.getElementById('subject').value
+                    var name = document.getElementById('name').value
+
+                    var completeSubject = subject + " - " + name
+
+                    console.log(message)
+                    console.log(subject)
+                    window.open('mailto:shift.creatorspace@gmail.com?subject=' + completeSubject + '&body=' + message);
+                }
+            </script>
 
 	</body>
 </html>

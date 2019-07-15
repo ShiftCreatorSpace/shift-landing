@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #f1f3f5;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -166,7 +166,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+            color: black;
 		}
 
 	strong, b {
@@ -2692,7 +2692,7 @@ button,
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background: #ffffff;
+			background: white;
 			border-radius: 100%;
 			color: #312450;
 			text-align: center;
@@ -3165,7 +3165,7 @@ button,
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		min-height: 14em;
 	}
 
 		body.is-ie .spotlights > section {
@@ -4023,7 +4023,7 @@ button,
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color:white;
 						}
 
 		}
@@ -4039,15 +4039,15 @@ button,
 /* Intro */
 
 	#intro {
-		background-image: url("images/intro.png");
-		background-position: 94% 50%;
+		background-image: url("images/illustration.png");
+		background-position: 96% 60%;
 		background-repeat: no-repeat;
-		background-size: 35vw 24vw;
+		background-size: 36vw 24vw;
 	}
 
 		#intro p {
 			font-size: 1.25em;
-			width: 55%;
+			width: 50%;
 		}
 
 			@media screen and (max-width: 980px) {

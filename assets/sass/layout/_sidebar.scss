@@ -98,7 +98,8 @@
 				&:after {
 					@include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
 					@include vendor('transition', 'max-width #{_duration(transition)} ease');
-					max-width: 0;
+                    max-width: 0;
+                    background-color: white;
 				}
 
 				&:hover {
@@ -173,7 +174,7 @@
 
 					&:after {
 						background-image: none;
-						background-color: _palette(accent3);
+						background-color: white;
 					}
 				}
 			}
