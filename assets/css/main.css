@@ -3543,9 +3543,9 @@ button,
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #212529;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: 1em 2em;
 	}
 
 		#header > .title {
