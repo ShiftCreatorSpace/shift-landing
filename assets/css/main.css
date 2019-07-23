@@ -150,6 +150,10 @@ input, select, textarea {
 		.flex-container {
 			display: flex;
 		}
+		.flex-container-spaced {
+			display: flex;
+			justify-content: space-evenly;
+		}
     .pillars{
         color: white;
     }
