@@ -3417,7 +3417,7 @@ button,
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #495057;
 		}
 
 		.wrapper.style2 {
@@ -3607,6 +3607,9 @@ button,
 		}
 
 		@media screen and (max-width: 480px) {
+			.mobile-hide{
+				display: none;
+			}
 
 			#header {
 				display: block;
