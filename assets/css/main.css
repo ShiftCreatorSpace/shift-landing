@@ -2013,6 +2013,13 @@ button,
                 opacity: 0.1;
             }
 
+.secondary-button.homepage {
+	margin: 1rem;
+}
+
+.actions.homepage {
+	margin-left: -2rem;
+}
 
 /* Pillars Button */
 
@@ -4171,7 +4178,7 @@ button,
 		}
 
 		#sidebar nav a.navbar-button {
-			border: 5px solid rgba(255, 255, 255, 0.15);
+			border: 2px solid rgba(255, 255, 255, 0.3);
 			padding: 5px;
 			width: auto;
 			display: table;
@@ -4294,8 +4301,8 @@ button,
 						display: table;
 						height: 2rem;
 						padding: 0 0.25rem;
-						line-height: 1.5rem;
-						top: 0.6rem;
+						line-height: 1.75rem;
+						top: 0.8rem;
 					}
 
 		}
