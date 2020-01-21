@@ -159,11 +159,19 @@ input, select, textarea {
 			border-bottom: 5px solid #ddd;
 		}
 
-		.flex-container-spaced > img {
+		.flex-container-spaced > a > img {
 			height: 50px;
 			width: auto;
 			margin: 1em;
+		}
+
+		.flex-container-spaced > a {
 			opacity: 0.75;
+			transition: opacity 0.25s;
+		}
+
+		.flex-container-spaced > a:hover {
+			opacity: 1;
 		}
 
     .pillars{
