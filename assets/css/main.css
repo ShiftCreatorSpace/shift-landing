@@ -2995,6 +2995,17 @@ button,
 			top: 0.25em;
 		}
 
+		.image.middle {
+			width: 50%;
+			margin: 2em 12.5%;
+			top: 0.25em;
+		}
+
+		.image.middle img {
+			width: 100%;
+			display: block;
+		}
+
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
@@ -4330,6 +4341,12 @@ button,
 		background-position: 85% 60%;
 		background-repeat: no-repeat;
 		background-size: 30vw 24vw;
+	}
+
+	#intro.showcase {
+		background-image: url("images/lightbulb.png");
+		background-size: 15vw auto;
+		background-position: 75% 60%;
 	}
 
 		#intro p {
