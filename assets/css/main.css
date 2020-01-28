@@ -174,16 +174,17 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		.homepage-main-logo {
-			width: 500px;
-			height: auto;
-			margin-bottom: 75px;
-			margin-top: -25px
-		}
-
-		@media screen and (max-width: 980px) {
-			.homepage-main-logo {
-				width: 300px;
+		/*
+		mobile has a strange bug where only inline styles are correctly processed
+		
+		so basically we need to override these inline styles when we're on desktop
+		instead of the normal max-width @media statements
+		
+		*/
+		@media screen and (min-width: 980px) {
+			#homepage-main-shift-logo {
+				width: 500px !important;
+				height: auto !important;
 			}
 		}
 
