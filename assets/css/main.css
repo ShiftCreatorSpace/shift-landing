@@ -202,6 +202,14 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
+	a > h5.pillars {
+		display: inline-block;
+		border-bottom: 2px solid #fff;
+	}
+	a:hover > h5.pillars {
+		opacity: 1;
+	}
+
 	a {
 		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
