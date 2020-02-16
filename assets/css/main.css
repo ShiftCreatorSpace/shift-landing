@@ -183,7 +183,7 @@ input, select, textarea {
 		*/
 		@media screen and (min-width: 980px) {
 			#homepage-main-shift-logo {
-				width: 500px !important;
+				width: 400px !important;
 				height: auto !important;
 			}
 		}
@@ -200,6 +200,14 @@ input, select, textarea {
 		opacity: 0.75;
 		letter-spacing: 0.25rem;
 		text-transform: uppercase;
+	}
+
+	a > h5.pillars {
+		display: inline-block;
+		border-bottom: 2px solid #fff;
+	}
+	a:hover > h5.pillars {
+		opacity: 1;
 	}
 
 	a {
@@ -4353,7 +4361,13 @@ button,
 		background-image: none;
 		background-size: 15vw auto;
 		background-position: 75% 60%;
+		background-color: #D15F5C;
+		color: #fff;
 	}
+
+		#intro.showcase .inner > div > h2 {
+			color: #fff;
+		}
 
 		#intro p {
 			font-size: 1.25em;
