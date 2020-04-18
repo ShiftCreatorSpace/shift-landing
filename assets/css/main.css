@@ -151,7 +151,7 @@ input, select, textarea {
 			display: flex;
 		}
 		.flex-container-spaced {
-			display: flex;	
+			display: flex;
 			flex-wrap: wrap;
 		}
 
@@ -176,16 +176,51 @@ input, select, textarea {
 
 		/*
 		mobile has a strange bug where only inline styles are correctly processed
-		
+
 		so basically we need to override these inline styles when we're on desktop
 		instead of the normal max-width @media statements
-		
+
 		*/
 		@media screen and (min-width: 980px) {
 			#homepage-main-shift-logo {
 				width: 400px !important;
 				height: auto !important;
 			}
+		}
+
+		@keyframes fadedown {
+			from {
+		    max-height: 0;
+		  }
+		  to {
+		    max-height: 4rem;
+		  }
+		}
+
+		.showcase-banner {
+			width: 100%;
+			height: 4rem;
+			padding: 0 1rem;
+			margin: 0;
+			background-color: #D15F5C;
+			z-index: 100;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-height: 0;
+			transform-origin: top center;
+			box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+			animation: fadedown 1s ease 0.2s forwards;
+		}
+
+		.showcase-banner > p {
+			font-size: 1em;
+			color: #fff;
+			margin: 0;
+		}
+
+		.showcase-banner > p > span {
+			font-weight: 900;
 		}
 
     .pillars{
@@ -195,7 +230,7 @@ input, select, textarea {
 	h2.pillars {
 		margin-bottom: 0.1rem;
 	}
-	
+
 	h5.pillars {
 		opacity: 0.75;
 		letter-spacing: 0.25rem;
@@ -2949,32 +2984,32 @@ button,
 				}
 
 /* Image */
-	.middle {	
-		transition: .3s ease;	
-		opacity: 0;	
-		position: absolute;	
-		top: 50%;	
-		left: 50%;	
-		transform: translate(-50%, -50%);	
-		-ms-transform: translate(-50%, -50%);	
-		text-align: center;	
-		width: 100%;	
-	}	
+	.middle {
+		transition: .3s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
 
-	.creator:hover img{	
-		transition: .3s ease;	
-		opacity: 0.3;	
-	}	
+	.creator:hover img{
+		transition: .3s ease;
+		opacity: 0.3;
+	}
 
-	.creator:hover .middle {	
-		transition: .3s ease;	
-		opacity: 1;	
-	}	
+	.creator:hover .middle {
+		transition: .3s ease;
+		opacity: 1;
+	}
 
-	.text {	
-		color: black;	
-		font-size: 16px;	
-		padding: 16px 32px;	
+	.text {
+		color: black;
+		font-size: 16px;
+		padding: 16px 32px;
 	}
 
 	.image {
@@ -3501,7 +3536,7 @@ button,
 		.spotlights > section:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
-		
+
 		.spotlights > section:nth-child(4) {
 			background-color: rgba(0, 0, 0, 0.15);
 		}
@@ -3889,8 +3924,8 @@ button,
 		}
 
 		@media screen and (max-width: 480px) {
-			.mobile-hide{	
-				display: none;	
+			.mobile-hide{
+				display: none;
 			}
 
 			#header {
