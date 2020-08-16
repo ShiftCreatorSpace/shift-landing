@@ -36,8 +36,12 @@
 					<li><a href="#program">What we do</a></li>
 					<li><a href="#alumni">Affilitations</a></li>
 					<li><a href="#pillars">Our pillars</a></li>
-					<li><a href="#contact">Get in touch</a></li>
-					<li><a href="https://projects2020.shiftcreator.space" class="navbar-button">Creator projects</a></li>
+                    <li><a href="#contact">Get in touch</a></li>
+                    <!--
+                        Probably the weirdest hack I've ever had to do.
+                        The template breaks if href is anything except for a hash, BUT href='#' also breaks it for some reason
+                    -->
+					<li><a href="#a" onClick="window.location = 'https://projects2020.shiftcreator.space'" class="navbar-button">Creator projects</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -68,7 +72,7 @@
 						share the unparalleled drive to bring our ideas to life.</p>
 					<ul class="actions">
 						<li>
-							<a href="showcase.html" class="secondary-button">Projects</a></li>
+							<a href="https://projects2020.shiftcreator.space" class="secondary-button">Projects</a></li>
 							<a href="#contact" class="button">Contact us</a>
 					</ul>
 				</div>
@@ -182,7 +186,7 @@
 				<div class="content">
 					<div class="inner">
 						<h2 class="pillars">Ideate</h2>
-						<p class="pillars">What sparks your interest ? What is your passion ? We would love to see and hear 
+						<p class="pillars">What sparks your interest? What is your passion? We would love to see and hear 
 							what you have to share with the world. We welcome the wildest ideas at Shift Creator Space, and will 
 							facilitate as you explore what makes you curious.
 						</p>
