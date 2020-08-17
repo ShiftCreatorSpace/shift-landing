@@ -23,6 +23,7 @@
 	<link rel="icon" type="image/png" href="images/houseLogo_2.png" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/custom.css" /></noscript>
 </head>
 
 <body class="is-preload">
@@ -227,6 +228,14 @@
 			</section>
 		</section>
 
+		<!-- Recruitment 20-21 -->
+		<section class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Fall 2020 Recruiting Calendar</h2>
+				<div id="calendar_display"></div>
+			</div>
+		</section>
+
 
 		<!-- Contact -->
 		<section id="contact" class="wrapper style1 fade-up">
@@ -309,6 +318,7 @@
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
+	<script src="assets/js/moment.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script type="text/javascript">
 
@@ -327,6 +337,39 @@
 			console.log(subject)
 			window.open('mailto:shift.creatorspace@gmail.com?subject=' + completeSubject + '&body=' + message);
 		}
+
+		$(document).ready(() => {
+			const response = $.get(
+				'https://clients6.google.com/calendar/v3/calendars/dq70lp4kia723amtf6jfv0n3b8@group.calendar.google.com/events?calendarId=dq70lp4kia723amtf6jfv0n3b8%40group.calendar.google.com&singleEvents=true&timeZone=America%2FNew_York&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2020-07-26T00%3A00%3A00-04%3A00&timeMax=2020-09-06T00%3A00%3A00-04%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs'
+			).done(function (data ) {
+				console.log(data);
+				document.getElementById("calendar_display").innerHTML = `${data.items.map((item) => `
+					<div class="event_row">
+						<div class="event_date_display">
+							<span>
+								${item.start.dateTime ?
+										moment(item.start.dateTime).format('MMMM Do YYYY') :
+									item.start.date ?
+										moment(item.start.date).format('MMMM Do YYYY') :
+									"Time TBA"
+								}
+							</span>
+							<span>
+								${item.start.dateTime && item.end.dateTime ?
+									`${moment(item.start.dateTime).format('LT')} - ${moment(item.end.dateTime).format('LT')}` : ''}
+							</span>
+						</div>
+						<div class="event_content">
+							<h3 class="event_name">${item.summary}</h3>
+							<div class="event_content_flex">
+								<p class="event_description">${item.location ? item.location : "Location TBD"}</p>
+								<a href="${item.htmlLink}" target="_blank">View event</a>
+							</div>
+						</div>
+					</div>
+				`).join('')}`
+			})
+		})
 	</script>
 
 </body>
