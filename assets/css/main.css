@@ -3291,7 +3291,15 @@ button,
 
 				ul.icons li > a .label, ul.icons li > span .label {
 					display: none;
-				}
+                }
+     
+    ul.icons_big {
+        margin-top: -1rem;
+    }
+
+    ul.icons_big li > a {
+        font-size: 2rem;
+    }
 
 /* Menu */
 
