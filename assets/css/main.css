@@ -172,7 +172,25 @@ input, select, textarea {
 
 		.flex-container-spaced > a:hover {
 			opacity: 1;
-		}
+        }
+
+        #calendar_section * {
+            color: white;
+        }
+        
+        .video {
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .email_link {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        ul.contact > li > a {
+            text-decoration: underline;
+        }
 
 		/*
 		mobile has a strange bug where only inline styles are correctly processed
