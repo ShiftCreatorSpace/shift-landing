@@ -1,5 +1,8 @@
 @import url(fontawesome-all.min.css);
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Lora:wght@700&display=swap');
+
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -115,12 +118,17 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #212529;
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: #212529;
+        font-family: 'IBM Plex Sans', -apple-system, Roboto, Helvetica, Arial, sans-serif;
+		/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
-	}
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Lora', 'IBM Plex Sans', -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    }
 
 		@media screen and (max-width: 1680px) {
 
@@ -3756,7 +3764,7 @@ button,
 		}
 
 		.wrapper.style1 {
-			background-color: #F9F9F9;
+			background-color: #FAF7F2;
 		}
 
 		.wrapper.style1-alt {
@@ -3764,7 +3772,7 @@ button,
 		}
 
 		.wrapper.style2 {
-			background-color: #13B5DF;
+			background-color: #5AB2CE;
 		}
 
 		.wrapper.style2-alt {
@@ -3772,7 +3780,7 @@ button,
 		}
 
 		.wrapper.style3 {
-			background-color: #D25F5C;
+			background-color: #E45E51;
 		}
 
 		.wrapper.style3-alt {
