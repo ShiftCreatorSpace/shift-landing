@@ -24,6 +24,7 @@
 
 .event_content {
   display: grid;
+  grid-row-gap: 0.5rem;
 }
 
 .event_content_flex {
@@ -37,4 +38,8 @@
 
 .event_content_flex a:hover {
   color: #1c7ed6;
+}
+
+.event_link {
+  font-weight: bold;
 }
