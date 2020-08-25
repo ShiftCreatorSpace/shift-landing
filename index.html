@@ -293,6 +293,11 @@
 					document.getElementById("calendar_display").innerHTML = '<p>No events at this time, check back later!</p>'
 				}
 				else {
+					data.items.sort(function(a, b) {
+					    var c = new Date(a.start.dateTime ? a.start.dateTime : a.start.date);
+					    var d = new Date(b.start.dateTime ? b.start.dateTime : b.start.date);
+					    return c-d;
+					});
 					document.getElementById("calendar_display").innerHTML = `${data.items.map((item) => `
 						<div class="event_row">
 							<div class="event_date_display">
