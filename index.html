@@ -325,7 +325,9 @@
 									}
 									${
 										item.description ?
-										`<p class="event_description">${item.description}</p>`
+											item.description.includes('http') ?
+											`<p class="event_description"><a href="${item.description}" target="_blank" style="margin-left: 0px">${item.description}</a></p>`
+											: `<p class="event_description">${item.description}</p>`
 										:
 										`<p class="event_description">Details TBD</p>`
 									}
