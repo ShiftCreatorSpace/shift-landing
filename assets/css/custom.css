@@ -24,11 +24,11 @@
 
 .event_content {
   display: grid;
-  grid-row-gap: 0.5rem;
 }
 
 .event_content_flex {
   display: flex;
+  margin: 0rem;
 }
 
 .event_content_flex a {
@@ -42,4 +42,21 @@
 
 .event_link {
   font-weight: bold;
+}
+
+@media screen and (max-width: 360px) {
+  .event_row {
+    grid-template-columns: 150px 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .event_row {
+    grid-template-columns: 300px 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+#recruiting > .inner {
+  overflow: scroll;
 }
