@@ -4291,6 +4291,7 @@ button,
 			display: table;
 			float: right;
 			border-radius: 5px;
+      margin-bottom: 24px;
 		}
 
 			#sidebar nav a:before, #sidebar nav a:after {
