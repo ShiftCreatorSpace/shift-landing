@@ -57,8 +57,8 @@
                         Probably the weirdest hack I've ever had to do.
                         The template breaks if href is anything except for a hash, BUT href='#' also breaks it for some reason
                     -->
-					<li><a href="#a" onClick="window.location = 'https://2021.shiftcreator.space'" class="navbar-button">2021 projects</a></li>
-          <li><a href="#a" onClick="window.location = 'https://2020.shiftcreator.space'" class="navbar-button">2020 projects</a></li>
+                    <li><a href="#a" onClick="window.location = 'https://2021.shiftcreator.space'" target="_blank" class="navbar-button">2021 projects</a></li>
+                    <li><a href="#recruiting" class="navbar-button">Recruiting</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -96,7 +96,7 @@
 							<a href="https://2021.shiftcreator.space" class="secondary-button" target="_blank">Past Projects</a>
 						</li>
 						<li>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3PXUavc98COitphnHQCRHCAlPpXXkwL8vut_UhNaSs_-ENQ/viewform" class="button" target="_blank">Interest form</a>
+                            <a href="https://forms.gle/CbGeiMUrenhsofnh9" class="button" target="_blank">Interest form</a>
 						</li>
 					</ul>
 				</div>
@@ -222,12 +222,12 @@
         </section>
 
         <!-- Recruitment 20-21 -->
-		<!-- <section class="wrapper style2 fade-up" id="recruiting" style="min-height: 300px;">
+		<section class="wrapper style2 fade-up" id="recruiting" style="min-height: 300px;">
 			<div class="inner">
-				<h2>Fall 2020 Recruiting Calendar</h2>
+				<h2>Fall 2021 Recruiting Calendar</h2>
 				<div id="calendar_display"></div>
 			</div>
-		</section> -->
+		</section>
 
 
 		<!-- Contact -->
@@ -299,8 +299,9 @@
 	<script type="text/javascript">
 
 		$(document).ready(() => {
+            const calendarID = 'c_qf5qi2psu3bf4qeibpgkekt8ic@group.calendar.google.com'
 			const response = $.get(
-				'https://clients6.google.com/calendar/v3/calendars/c_3utmi5d296n78ujpgaiq1kbah0@group.calendar.google.com/events?calendarId=c_3utmi5d296n78ujpgaiq1kbah0%40group.calendar.google.com&singleEvents=true&timeZone=America%2FNew_York&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2020-07-26T00%3A00%3A00-04%3A00&timeMax=2020-09-25T00%3A00%3A00-04%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs'
+				`https://clients6.google.com/calendar/v3/calendars/${calendarID}/events?calendarId=${calendarID}&singleEvents=true&timeZone=America%2FNew_York&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2021-07-26T00%3A00%3A00-04%3A00&timeMax=2021-09-25T00%3A00%3A00-04%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs`
 			).done(function (data ) {
 				console.log(data);
 				if(!data.items.length) {
