@@ -1,0 +1,12 @@
+-----BEGIN PGP MESSAGE-----
+
+...
+
+-----END PGP MESSAGE-----
+
+ssh root@161.35.116.62
+
+password: today's date, all lowercase, no spaces, numbers turned into letters
+
+ex:
+decemberfifthtwentytwentyone
