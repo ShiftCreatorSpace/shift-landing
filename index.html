@@ -226,14 +226,14 @@
         </section>
 
         <!-- Recruitment 20-21 -->
-		<!-- <section class="wrapper style2 fade-up" id="recruiting" style="min-height: 300px;">
-			<div class="inner"> -->
-				<!-- <h2>Fall 2022 Recruiting</h2> -->
-				<!-- <div id="calendar_display"></div> -->
+		<section class="wrapper style2 fade-up" id="recruiting" style="min-height: 300px;">
+			<div class="inner">
+				<h2>Fall 2022 Recruiting</h2>
+				<div id="calendar_display"></div>
                 <!-- <p>We've wrapped up recruiting for this year! We only do recruitment in the fall, so if you're interested in joining Shift, please fill out the interest form <a href="https://forms.gle/CbGeiMUrenhsofnh9" target="_blank" style="font-weight: bold;">here</a> -->
                 <!-- to be added to our mailing list for next year.</p> -->
-			<!-- </div>
-		</section> -->
+			</div>
+		</section>
 
 
 		<!-- Contact -->
@@ -305,9 +305,10 @@
 	<script type="text/javascript">
 
 		$(document).ready(() => {
-            const calendarID = 'c_qf5qi2psu3bf4qeibpgkekt8ic@group.calendar.google.com'
+            const calendarID = 'c_rnpf60rq9aaherrba65pvoi61k@group.calendar.google.com'
+            // const calendarID = 'c_qf5qi2psu3bf4qeibpgkekt8ic@group.calendar.google.com'
 			const response = $.get(
-				`https://clients6.google.com/calendar/v3/calendars/${calendarID}/events?calendarId=${calendarID}&singleEvents=true&timeZone=America%2FNew_York&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2021-07-26T00%3A00%3A00-04%3A00&timeMax=2021-09-25T00%3A00%3A00-04%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs`
+				`https://clients6.google.com/calendar/v3/calendars/${calendarID}/events?calendarId=${calendarID}&singleEvents=true&timeZone=America%2FNew_York&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2021-07-26T00%3A00%3A00-04%3A00&timeMax=2022-09-25T00%3A00%3A00-04%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs`
 			).done(function (data ) {
 				console.log(data);
 				if(!data.items.length) {
@@ -347,7 +348,7 @@
 									${
 										item.description ?
 											item.description.includes('http') ?
-											`<p class="event_description"><a href="${item.description}" target="_blank" style="margin-left: 0px">${item.description}</a></p>`
+											`<p class="event_description"><a href="${item.description.split(' ').find(function (word) {return word.includes('http');}).replace('<u>', '').replace('</u>', '')}" target="_blank" style="margin-left: 0px">${item.description}</a></p>`
 											: `<p class="event_description">${item.description}</p>`
 										:
 										`<p class="event_description">Details TBD</p>`
