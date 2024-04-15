@@ -3038,68 +3038,68 @@ button,
 		padding: 16px 32px;
 	}
 
-	/* .image {
+	.image {
 		border-radius: 0.25em;
 		border: 0;
 		display: inline-block;
-		position: relative; */
-	/* } */
+		position: relative; 
+	}
 
-		/* .image img {
+		.image img {
 			border-radius: 0.25em;
 			display: block;
-		} */
+		}
 
-		/* .image.left, .image.right {
+		.image.left, .image.right {
 			max-width: 40%;
 		}
 
 			.image.left img, .image.right img {
 				width: 100%;
-			} */
+			}
 
-		/* .image.left {
+		.image.left {
 			float: left;
 			margin: 0 1.5em 1em 0;
 			top: 0.25em;
-		} */
+		}
 
-		/* .image.right {
+		.image.right {
 			float: right;
 			margin: 0 0 1em 1.5em;
 			top: 0.25em;
-		} */
-/* 
+		}
+
 		.image.middle {
 			width: 50%;
 			margin: 2em 12.5%;
 			top: 0.25em;
-		} */
+		}
 
-		/* .image.middle img {
+		.image.middle img {
 			width: 100%;
 			display: block;
-		} */
+		}
 
-		/* .image.fit {
+		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
-		} */
+		}
 
-			/* .image.fit img {
+			.image.fit img {
 				width: 100%;
-			} */
+			}
 
-		/* .image.main {
+		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
-		} */
+		}
 
-			/* .image.main img {
+			 .image.main img {
 				width: 100%;
-			} */
+			}
 
 /* List */
 
