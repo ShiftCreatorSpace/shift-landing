@@ -167,11 +167,11 @@ input, select, textarea {
 			border-bottom: 5px solid #ddd;
 		}
 
-		.flex-container-spaced > a > img {
+		/* .flex-container-spaced > a > img {
 			height: 50px;
 			width: auto;
 			margin: 1em;
-		}
+		} */
 
 		.flex-container-spaced > a {
 			opacity: 0.75;
@@ -3045,10 +3045,10 @@ button,
 		position: relative;
 	}
 
-		.image img {
+		/* .image img {
 			border-radius: 0.25em;
 			display: block;
-		}
+		} */
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -3087,9 +3087,9 @@ button,
 			width: 100%;
 		}
 
-			.image.fit img {
+			/* .image.fit img {
 				width: 100%;
-			}
+			} */
 
 		.image.main {
 			display: block;
